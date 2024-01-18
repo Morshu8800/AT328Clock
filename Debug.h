@@ -9,7 +9,7 @@ void debug(void) {
     oled.init();
     oled.clear();
     oled.setCursor(0, 0);
-    oled.print("Ошибка! Код:<0x02>.");
+    oled.print("Ошибка! Код:<0x01>.");
     oled.setCursor(0, 1);
     oled.print("Подробнее об ошибке");
     oled.setCursor(0, 2);
@@ -19,9 +19,9 @@ void debug(void) {
     oled.setCursor(0, 4);
     oled.print("Morshu8800/AT328Clock/");
     oled.setCursor(0, 5);
-    oled.print("issues/Clock_Corrupt");
+    oled.print("issues/1");
     while (1) {
-      for (int i = 0; i < 2; i++) {
+      for (int i = 0; i < 3; i++) {
         digitalWrite(LED, 1);
         delay(200);
         digitalWrite(LED, 0);
@@ -34,7 +34,7 @@ void debug(void) {
     oled.init();
     oled.clear();
     oled.setCursor(0, 0);
-    oled.print("Ошибка! Код:<0x03>.");
+    oled.print("Ошибка! Код:<0x02>.");
     oled.setCursor(0, 1);
     oled.print("Подробнее об ошибке");
     oled.setCursor(0, 2);
@@ -44,9 +44,9 @@ void debug(void) {
     oled.setCursor(0, 4);
     oled.print("Morshu8800/AT328Clock/");
     oled.setCursor(0, 5);
-    oled.print("issues/AHT_Corrupt");
+    oled.print("issues/2");
     while (1) {
-      for (int i = 0; i < 3; i++) {
+      for (int i = 0; i < 4; i++) {
         digitalWrite(LED, 1);
         delay(200);
         digitalWrite(LED, 0);
